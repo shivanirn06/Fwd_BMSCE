@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusXchange</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      color: #2e2e2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: url("project_img.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed; 
+    position: relative;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 8px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #667eea;
+    }
+
+    .logo img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .main-content {
+      display: flex;
+      flex: 1;
+      padding: 5%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .information {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .information h1 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .information p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .about,
+    .contact {
+      padding: 80px 20px;
+      text-align: center;
+      background: #d0caca;
+    }
+
+    .abt,
+    .ctc {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(203, 223, 208, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h2,
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about p,
+    .contact p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      text-align: left;
+    }
+
+    .about ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .about li {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #667eea;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body> <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"> <img src="logo.png" alt="CampusXchange logo" /> </div>
+    <ul>
+      <li><a href="#">SIGN UP</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#about">ABOUT</a></li>
+    </ul>
+  </nav> <!-- Main Content -->
+  <div class="main-content">
+    <div class="information">
+      <h1>Welcome to CampusXchange</h1>
+      <p> Skip the cost, keep the convenience! CampusXchange lets students share, rent, and swap everything from
+        textbooks to hostel essentials. Join our community and make campus life smarter, easier, and more connected.
+      </p>
+    </div>
+  </div> <!-- About Section -->
+  <section id="about" class="about">
+    <div class="abt">
+      <h2>What is CampusXchange?</h2>
+      <p> CampusXchange is a digital platform built for students to share, rent, or exchange resources within their
+        campus community. Instead of spending on new items, students can easily access what they need from peers,
+        whether it’s academic materials, hostel essentials, or other useful items. This system promotes affordability,
+        sustainability, and collaboration by creating a trusted network inside the campus. </p>
+      <h4><b><i>WHY CAMPUS EXCHANGE?</i></b></h4>
+      <ul>
+        <li>Helps students save money by renting or borrowing instead of buying.</li>
+        <li>Encourages sustainability by reducing waste and reusing resources.</li>
+        <li>Provides easy access to academic essentials like books, lab kits, and stationery.</li>
+        <li>Supports sharing of hostel and daily-use items such as utensils, mattresses, or bicycles.</li>
+        <li>Builds a community culture of trust and cooperation among students.</li>
+        <li>Reduces storage problems by allowing students to exchange or pass on items they no longer need.</li>
+      </ul>
+    </div>
+  </section> <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="ctc">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:campusXchange.owner@example.com">campusXchange.owner@example.com</a></p>
+      <p>Phone: +91 12345 67892</p>
+      <p>We would love to hear your feedback and queries!</p>
+    </div>
+  </section>
+</body>
+
+</html>
