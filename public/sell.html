@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell an Item | CampusXchange</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      margin: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #0077b6;
+    }
+    nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      color: #0077b6;
+      font-weight: 500;
+    }
+    .form-container {
+      max-width: 600px;
+      background: #fff;
+      padding: 30px;
+      margin: 50px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 500;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+    .btn {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      font-size: 1em;
+    }
+    .btn:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"> CampusXchange</div>
+    <nav>
+      <a href="main_page.html">Home</a>
+      <a href="cart.html">My Cart</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2> Sell an Item</h2>
+    <form>
+      <label>Item Name</label>
+      <input type="text" placeholder="e.g. Engineering Mathematics Book" required>
+
+      <label>Department</label>
+      <select>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>MECH</option>
+        <option>CIVIL</option>
+      </select>
+
+      <label>Semester</label>
+      <select>
+        <option>1st Sem</option>
+        <option>2nd Sem</option>
+        <option>3rd Sem</option>
+        <option>4th Sem</option>
+        <option>5th Sem</option>
+        <option>6th Sem</option>
+      </select>
+
+      <label>Price (₹)</label>
+      <input type="number" min="0" placeholder="Enter price">
+
+      <label>Description</label>
+      <textarea placeholder="Write a short description..."></textarea>
+
+      <label>Upload Image</label>
+      <input type="file" accept="image/*">
+
+      <button type="submit" class="btn">Submit Item</button>
+    </form>
+  </div>
+</body>
+</html>

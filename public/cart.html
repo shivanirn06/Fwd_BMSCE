@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      margin: 0;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    h2 {
+      color: #0077b6;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    .total {
+      text-align: right;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    .btn {
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CampusXchange</div>
+    <nav>
+      <a href="main_page.html">Home</a>
+      <a href="sell.html">Sell Item</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2> My Cart</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Department</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Data Structures Book</td>
+        <td>CSE</td>
+        <td>₹250</td>
+        <td><button class="btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td>Scientific Calculator</td>
+        <td>ECE</td>
+        <td>₹150</td>
+        <td><button class="btn">Remove</button></td>
+      </tr>
+    </table>
+
+    <div class="total">
+      <!-- <strong>Total: ₹400</strong><br><br> -->
+      <button class="btn">Proceed to Book</button>
+    </div>
+  </div>
+  <script></script>
+</body>
+</html>
